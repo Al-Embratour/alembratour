@@ -25,7 +25,7 @@ const translations: Record<Language, Dictionary> = {
       { label: 'أعمالنا', href: '/#portfolio' },
       { label: 'لماذا تختار الإمبراطور؟', href: '/#why-choose-us' },
       { label: 'المدونة', href: '/blog' },
-      { label: 'تواصل معنا', href: '/#contact' },
+      { label: 'تواصل معنا', href: '/contact' },
     ],
   },
   en: {
@@ -37,7 +37,7 @@ const translations: Record<Language, Dictionary> = {
       { label: 'Portfolio', href: '/#portfolio' },
       { label: 'Why Choose Us?', href: '/#why-choose-us' },
       { label: 'Blog', href: '/blog' },
-      { label: 'Contact Us', href: '/#contact' },
+      { label: 'Contact Us', href: '/contact' },
     ],
   },
 };

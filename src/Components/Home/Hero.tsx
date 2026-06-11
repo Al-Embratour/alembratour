@@ -198,7 +198,7 @@ export const Hero = () => {
             className="w-full sm:w-auto"
           >
             <Link
-              href="/portfolio"
+              href="/#portfolio"
               className="
                 flex
                 w-full

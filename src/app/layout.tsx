@@ -3,6 +3,7 @@ import { Navbar } from '@/Components/Layout/Navbar';
 import './globals.css';
 import { Tajawal, Inter } from 'next/font/google';
 import { Metadata } from 'next';
+import Footer from '@/Components/Layout/Footer';
 
 const tajawal = Tajawal({
   subsets: ['arabic'],
@@ -39,6 +40,7 @@ export default function RootLayout({
           <main className="flex-grow">
             {children}
           </main>
+          <Footer/>
         </LanguageProvider>
       </body>
     </html>

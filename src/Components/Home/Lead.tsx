@@ -4,6 +4,7 @@ import { TrustBar } from '@/Components/Home/Trust';
 import { Portfolio } from './Portfolio';
 import { WhyChooseEmbratour } from './Why';
 import { BlogSection } from './BlogSection';
+// import ContactPage from '../../app/contact/page';
 
 
 export default function Lead() {
@@ -16,6 +17,7 @@ export default function Lead() {
       <Portfolio/>
       <WhyChooseEmbratour/>
       <BlogSection/>
+      {/* <ContactPage/> */}
       {/* 💡 ملاحظة: يمكنك هنا مستقبلاً استدعاء بقية السكاشن مثل (Services, Portfolio, About, Testimonials) */}
     </main>
   );
