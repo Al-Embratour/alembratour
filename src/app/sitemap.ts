@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // الرابط الأساسي للموقع (عدله لرابط موقعك النهائي لما تشتريه)
-  const baseUrl = 'https://alembratour.com'; 
+  const baseUrl = 'https://alembratour.vercel.app'; 
 
   return [
     {

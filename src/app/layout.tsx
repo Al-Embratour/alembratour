@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 
 // 👑 الميتا داتا الرسمية والنظيفة لـ "الإمبراطور" (عربي صريح / إنجليزي صريح)
 export const metadata: Metadata = {
-  metadataBase: new URL('https://alembratour.com'),
+  metadataBase: new URL('https://alembratour.vercel.app'),
   // 1. العناوين والوصف باللغة العربية الصريحة
   title: {
     template: '%s | الإمبراطور', 
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     'وكالة الإمبراطور الرقمية هي شريكك الإبداعي المعتمد لخدمات البرمجة الخاصة، تصميم المواقع الاحترافية، التسويق الإلكتروني الشامل، وإدارة الهوية التجارية بأعلى معايير الفخامة والاحترافية.',
   
   applicationName: 'الإمبراطور',
-  authors: [{ name: 'الإمبراطور', url: 'https://alembratour.com' }],
+  authors: [{ name: 'الإمبراطور', url: 'https://alembratour.vercel.app' }],
   generator: 'Next.js',
   
   // 2. الكلمات المفتاحية (مفصولة تماماً بدون أي خلط داخل الكلمة الواحدة)
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ar_EG',
-    url: 'https://alembratour.com',
+    url: 'https://alembratour.vercel.app',
     siteName: 'الإمبراطور',
     title: 'الإمبراطور | وكالة رقمية إبداعية لخدمات البرمجة والتصميم والتسويق',
     description:

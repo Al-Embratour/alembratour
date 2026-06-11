@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: '/api/', // منع أرشفة ملفات الـ API الخلفية
     },
     // رابط خريطة الموقع اللي هيقرا منها جوجل
-    sitemap: 'https://alembratour.com/sitemap.xml', 
+    sitemap: 'https://alembratour.vercel.app/sitemap.xml', 
   };
 }
