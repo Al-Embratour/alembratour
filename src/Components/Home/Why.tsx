@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
 
 const featuresData = [
@@ -67,7 +67,7 @@ export const WhyChooseEmbratour = () => {
   const isAr = language === 'ar';
 
   // إعدادات الأنيميشن للظهور المتتابع (Staggered Animation)
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -75,7 +75,7 @@ export const WhyChooseEmbratour = () => {
     }
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,
