@@ -10,11 +10,13 @@ export default function Footer() {
 
     // 🎯 الروابط السريعة المحدثة بالترتيب الدقيق الذي طلبته
     const navLinks = [
-        { nameAr: 'خدماتنا', nameEn: 'Our Services', href: '/services' },
-        { nameAr: 'أعمالنا', nameEn: 'Portfolio', href: '/portfolio' },
-        { nameAr: 'لماذا الإمبراطور', nameEn: 'Why Al Embratour', href: '/why-embratour' },
+        
+        { nameAr: 'خدماتنا', nameEn: 'Our Services', href: '/#services' },
+        { nameAr: 'أعمالنا', nameEn: 'Portfolio', href: '/#portfolio' },
+        { nameAr: 'لماذا الإمبراطور', nameEn: 'Why Al Embratour', href: '/#why-choose-us' },
         { nameAr: 'المدونة', nameEn: 'Blog', href: '/blog' },
-        { nameAr: 'اتصل بنا', nameEn: 'Contact Us', href: '/contact' }
+        { nameAr: 'اتصل بنا', nameEn: 'Contact Us', href: '/contact' },
+        { href: '/' },
     ];
 
     return (

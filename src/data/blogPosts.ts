@@ -22,9 +22,9 @@ export const allPosts: BlogPost[] = [
       summary: 'الخلاصة والفارق الجوهري بين الأكواد الخاصة والقوالب الجاهزة من حيث السرعة، الأمان، والتحكم المطلق في الأداء البرمجي لمنصتك الرقمية الفاخرة.',
       content: `عندما نتحدث عن بناء منصة رقمية لشركة كبرى أو تطبيق ويب يطمح لخدمة آلاف المستخدمين تزامنياً، فإن الاختيار بين أنظمة إدارة المحتوى الجاهزة مثل ووردبريس وبين البرمجة الخاصة (Custom Code) هو خط الفاصل بين الاستدامة والانهيار المفاجئ. الفكرة هنا ليست تقليلاً من شأن WordPress، فهو أداة ممتازة للمدونات البسيطة أو المواقع التعريفية الصغيرة التي لا تتطلب عمليات معقدة.
 
-      ولكن، تكمن المشكلة الحقيقية في الاعتماد على القوالب الجاهزة والإضافات (Plugins) الكثيرة. كل إضافة تقوم بتثبيتها هي عبارة عن كود برمي كتبه مطور آخر، لا تدري مدى أمانه أو مدى توافقه مع الإضافات الأخرى. مع مرور الوقت، تتحول هذه الإضافات إلى "قنابل موقوتة" تهدد أمن الموقع، وتجعل أداءه ثقيلاً بسبب كثرة استدعاء ملفات الجافا سكريبت والـ CSS غير المستخدمة.
+       ولكن، تكمن المشكلة الحقيقية في الاعتماد على القوالب الجاهزة والإضافات (Plugins) الكثيرة. كل إضافة تقوم بتثبيتها هي عبارة عن كود برمي كتبه مطور آخر، لا تدري مدى أمانه أو مدى توافقه مع الإضافات الأخرى. مع مرور الوقت، تتحول هذه الإضافات إلى "قنابل موقوتة" تهدد أمن الموقع، وتجعل أداءه ثقيلاً بسبب كثرة استدعاء ملفات الجافا سكريبت والـ CSS غير المستخدمة.
 
-      في المقابل، الاعتماد على الأكواد الخاصة باستخدام إطارات عمل حديثة مثل Next.js يمنحك حرية مطلقة وسرعة خارقة. الكود يُكتب بالسطر ليلبي احتياجات البيزنس الخاص بك فقط دون زيادة أو نقصان. هذا التوجه يضمن استجابة الموقع في أجزاء من الثانية، ويغلق تماماً أبواب الثغرات الأمنية المتكررة التي تؤرق أصحاب المشاريع الضخمة، مما يجعل منصتك محمية بنسبة 100% وقابلة للتوسع اللانهائي مستقبلاً.`
+       في المقابل، الاعتماد على الأكواد الخاصة باستخدام إطارات عمل حديثة مثل Next.js يمنحك حرية مطلقة وسرعة خارقة. الكود يُكتب بالسطر ليلبي احتياجات البيزنس الخاص بك فقط دون زيادة أو نقصان. هذا التوجه يضمن استجابة الموقع في أجزاء من الثانية، ويغلق تماماً أبواب الثغرات الأمنية المتكررة التي تؤرق أصحاب المشاريع الضخمة، مما يجعل منصتك محمية بنسبة 100% وقابلة للتوسع اللانهائي مستقبلاً.`
     },
     en: {
       title: 'Q: Why do I avoid WordPress for large-scale enterprise applications?',
@@ -88,7 +88,8 @@ export const allPosts: BlogPost[] = [
     date: { ar: '٣ يونيو ٢٠٢٦', en: 'June 3, 2026' },
     ar: {
       title: 'جودة الكود مش رفاهية.. دي فلوس حقيقية بتوفرها لبيزنس المستقبل!',
-      summary: 'لماذا يجب أن تستثمر في بنية برمجية متماسكة ومكتوبة بـ TypeScript طالما أن الشكل الخارجي واحد؟ لأن الكود العشوائي حقل ألغام سيكلفك أضعاف سعره لاحقاً.',
+      // 🛠️ [تم الإصلاح] صياغة ملخص ملوكي من سياق المقال:
+      summary: 'لماذا يُعد الاستثمار في هندسة الكود النظيف واستخدام TypeScript قراراً مالياً استراتيجياً يحمي بيزنس المستقبلك من حقول الألغام البرمجية المكلفة؟',
       content: `في عالم الأعمال الرقمية، يميل العميل دايماً للحكم على المشروع من خلال الواجهة النهائية، التصاميم، والألوان التي يراها بعينه. ولكن تحت هذا المحرك الخارجي الجميل، توجد تفاصيل هندسية برمجية دقيقة هي التي تحدد ما إذا كان هذا المشروع استثماراً ناجحاً أم كارثة مالية مؤجلة.
 
       الاعتماد على الكود النظيف (Clean Code) والمنظم باستخدام لغة TypeScript الصارمة ليس مجرد رفاهية للمبرمجين، بل هو قرار مالي استراتيجي للبيزنس. عندما يتم بناء الكود بناءً على أنماط تصميم معمارية معتمدة (Design Patterns)، يصبح الموقع سريعاً، آمناً، والأهم من ذلك: قابلاً للتطوير والتعديل في أي وقت مستقبلاً.
@@ -97,6 +98,8 @@ export const allPosts: BlogPost[] = [
     },
     en: {
       title: 'Clean code is not an engineering luxury.. It preserves corporate budget!',
+      // 🛠️ [تم الإصلاح] English Summary based on context:
+      summary: 'Adhering to Clean Code methodologies and strict TypeScript integration is a calculated financial maneuver, preventing spaghetti architecture and full refactoring cycles.',
       content: `In digital business design, stakeholders naturally evaluate applications based on peripheral interfaces, fonts, and immediately visible UI states. Yet, underneath this cosmetic layer lies the core codebase engineering, which determines whether the build acts as an asset or a long-term liability.
 
       Adhering to Clean Code methodologies and enforcing strict TypeScript integration is a calculated financial maneuver, not an academic exercise. When software systems conform to tested Design Patterns, software ecosystems gain agility, run bulletproof, and accommodate growth seamlessly.
@@ -110,7 +113,8 @@ export const allPosts: BlogPost[] = [
     date: { ar: '١ يونيو ٢٠٢٦', en: 'June 1, 2026' },
     ar: {
       title: 'قواعد تصميم واجهات النخبة: كيف تجعل منصتك تبدو بقيمة مليون دولار؟',
-      summary: 'التفاصيل الصغيرة مثل المسافات المدروسة، الخطوط الملوكي، والحركات الانسيابية الخفيفة هي ما تفرق بين موقع عادي ومنصة رقمية فاخرة تعكس قوة البراند.',
+      // 🛠️ [تم الإصلاح] صياغة ملخص ملوكي من سياق المقال:
+      summary: 'البساطة المتناهية ودقة التفاصيل، بدءاً من المسافات المدروسة بعناية وحتى الحركات السينمائية الذكية، هي ما يصنع تجربة بصرية ساحرة تجذب عملاء النخبة.',
       content: `التصميم الفاخر لا يعني كثرة العناصر أو الألوان الصارخة البهرجة، بل على العكس تماماً؛ الفخامة تكمن في البساطة المتناهية والدقة المتناهية في أدق التفاصيل. واجهات المستخدم النخبوية (Elite UI/UX) هي التي تشعر المستخدم بالراحة والهيبة بمجرد دخوله للمنصة، دون أن يدرك السبب بوضوح.
 
       السر يبدأ من استخدام المسافات المدروسة بعناية (Premium Spacing) أو ما يسمى بالـ White Space، إعطاء العناصر مساحة لتتنفس يمنح العين شعوراً بالتنظيم والراحة. يأتي بعد ذلك اختيار الخطوط الاحترافية وتناسق أحجامها (Typography Scale) لبناء تسلسل هرمي واضح ومريح للقراءة.
@@ -119,6 +123,8 @@ export const allPosts: BlogPost[] = [
     },
     en: {
       title: 'Elite UI/UX Rules: How to program high-end luxury digital identities?',
+      // 🛠️ [تم الإصلاح] English Summary based on context:
+      summary: 'Discover why structural minimalism, calculated negative space, and smooth cinematic micro-interactions are the standard for high-market value digital visual identity.',
       content: `Luxury aesthetic design never revolves around visual clutter or over-saturated color choices; high-end production thrives on structural minimalism and relentless accuracy across details. Premium interfaces (Elite UI/UX) induce structural authority and customer confidence instantly, guiding users effortlessly.
 
       The science initiates with premium calculated negative space (White Space). Allowing layouts breathing room immediately commands visual organization. This is anchored by enterprise-grade typography scaling, positioning clear informational hierarchies that naturally sequence attention spans.
@@ -132,15 +138,18 @@ export const allPosts: BlogPost[] = [
     date: { ar: '٢٨ مايو ٢٠٢٦', en: 'May 28, 2026' },
     ar: {
       title: 'لماذا نعتمد TypeScript كمعيار أساسي صارم في جميع أعمالنا البرمجية؟',
-      summary: 'التخلص من أخطاء الجافا سكريبت التقليدية قبل التشغيل، وتأمين البيانات المتبادلة، هما السر وراء بناء برمجيات مستقرة وخالية تماماً من المشاكل للمنصات الكبرى.',
+      // 🛠️ [تم الإصلاح] صياغة ملخص ملوكي من سياق المقال:
+      summary: 'التخلص من أخطاء الجافا سكريبت وتأمين مسارات البيانات عبر Strict Typing هو السر وراء بناء منصات كبرى مستقرة ومحمية بنسبة 100% مهما كبر حجمها.',
       content: `في المشاريع البرمجية الكبيرة، السرعة الحقيقية في الإنتاج لا تأتي من كتابة الكود بشكل سريع وعشوائي، بل تأتي من تقليل الأخطاء غير المتوقعة التي تظهر فجأة أثناء التشغيل المباشر. لغة جافا سكريبت التقليدية مرنة للغاية، ولكن هذه المرونة هي سبب رئيسي في ظهور أخطاء برمجية خفية قد تؤدي لتوقف السيرفر أو حدوث مشاكل في معالجة بيانات العملاء.
 
-      لذلك، اتخذنا قراراً برمجياً صارماً باعتماد لغة TypeScript كمعيار أساسي لا تنازل عنه في كافة مشاريعنا. تتيح لنا TypeScript تحديد أنواع البيانات (Strict Typing) بشكل واضح وصريح لكل متغير، دالة، أو واجهة برمجة تطبيقات (API).
+      ذلك، اتخذنا قراراً برمجياً صارماً باعتماد لغة TypeScript كمعيار أساسي لا تنازل عنه في كافة مشاريعنا. تتيح لنا TypeScript تحديد أنواع البيانات (Strict Typing) بشكل واضح وصريح لكل متغير، دالة، أو واجهة برمجة تطبيقات (API).
 
       هذا يعني أن محرّر الأكواد (VS Code) يقوم باكتشاف الأخطاء وتنبيه المطور لها فوراً أثناء كتابة الكود وقبل أن تصل البرمجيات إلى مرحلة الإنتاج أو السيرفر الفعلي. هذا النظام الهندسي الصارم يحمي تدفق البيانات بالكامل ويجعل الأكواد قابلة للقراءة والفهم بواسطة أي فريق عمل مستقبلي، مما يضمن ثبات وقوة المنصة الرقمية مهما كبر حجم ملفاتها مئات المرات.`
     },
     en: {
       title: 'Why TypeScript is our non-negotiable architectural standard for applications?',
+      // 🛠️ [تم الإصلاح] English Summary based on context:
+      summary: 'Strict typing and real-time compilation boundary checking safeguard enterprise data pipelines, ensuring structural codebase integrity as operational scale expands.',
       content: `In software engineering pipelines, code production speed does not originate from careless, rapid code authoring; it is earned by mitigating unexpected runtime bugs. Standard JavaScript offers flexibility, yet this unchecked nature introduces implicit compilation vulnerabilities capable of halting runtime processes.
 
       To bulletproof development, we enforce TypeScript as an absolute architectural standard across our client portfolios. TypeScript provides robust type-safety schemas over every continuous variable, function parameter, and API endpoint layout.

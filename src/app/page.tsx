@@ -1,7 +1,4 @@
-import { Hero } from '@/Components/Home/Hero';
 import Lead from '@/Components/Home/Lead';
-import { Services } from '@/Components/Home/Services';
-import { TrustBar } from '@/Components/Home/Trust';
 
 
 export default function HomePage() {
