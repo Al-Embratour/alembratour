@@ -32,21 +32,21 @@ export const viewport: Viewport = {
 // 👑 الميتا داتا الرسمية والنظيفة لـ "الإمبراطور" (عربي صريح / إنجليزي صريح)
 export const metadata: Metadata = {
   metadataBase: new URL('https://alembratour.vercel.app'),
+
   // 1. العناوين والوصف باللغة العربية الصريحة
   title: {
-    template: '%s | الإمبراطور', 
-    default: 'الإمبراطور | وكالة رقمية إبداعية لخدمات البرمجة والتصميم والتسويق', 
+    template: '%s | الإمبراطور',
+    default: 'الإمبراطور | وكالة رقمية إبداعية لخدمات البرمجة والتصميم والتسويق',
   },
   description:
     'وكالة الإمبراطور الرقمية هي شريكك الإبداعي المعتمد لخدمات البرمجة الخاصة، تصميم المواقع الاحترافية، التسويق الإلكتروني الشامل، وإدارة الهوية التجارية بأعلى معايير الفخامة والاحترافية.',
-  
+
   applicationName: 'الإمبراطور',
   authors: [{ name: 'الإمبراطور', url: 'https://alembratour.vercel.app' }],
   generator: 'Next.js',
-  
-  // 2. الكلمات المفتاحية (مفصولة تماماً بدون أي خلط داخل الكلمة الواحدة)
+
+  // 2. الكلمات المفتاحية
   keywords: [
-    // كلمات مفتاحية عربية صريحة
     'الإمبراطور',
     'فرونت',
     'فرونت اند',
@@ -58,8 +58,7 @@ export const metadata: Metadata = {
     'إدارة سيو',
     'إدارة هوية تجارية',
     'تطوير مشاريع رقمية',
-    
-    // الكلمات المفتاحية الإنجليزية الصريحة
+
     'Al Embratour',
     'Digital Agency',
     'Creative Agency',
@@ -77,7 +76,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ar_EG',
     url: 'https://alembratour.vercel.app',
-    siteName: 'الإمبراطور',
+    siteName: 'الإمبراطور', // تثبيت اسم البراند هنا
     title: 'الإمبراطور | وكالة رقمية إبداعية لخدمات البرمجة والتصميم والتسويق',
     description:
       'نحول أفكارك البرمجية والتسويقية إلى واقع رقمي فخم يليق بعلامتك التجارية. خدمات برمجة خاصة، تصميم مواقع، وتسويق إلكتروني شامل.',
@@ -91,7 +90,7 @@ export const metadata: Metadata = {
     ],
   },
 
-  // 4. كروت تويتر (عربي صريح)
+  // 4. كروت تويتر
   twitter: {
     card: 'summary_large_image',
     title: 'الإمبراطور | وكالة رقمية إبداعية ',
@@ -100,11 +99,18 @@ export const metadata: Metadata = {
     images: ['/Logoo.png'],
   },
 
+  // 5. تظبيط الأيقونات لضمان قراءة جوجل للوجو في نتائج البحث
   icons: {
-    icon: '/Logoo.png',
+    icon: [
+      { url: '/Logoo.png' },
+      { url: '/Logoo.png', sizes: '48x48', type: 'image/png' },
+      { url: '/Logoo.png', sizes: '96x96', type: 'image/png' },
+      { url: '/Logoo.png', sizes: '144x144', type: 'image/png' },
+    ],
     shortcut: '/Logoo.png',
     apple: '/Logoo.png',
   },
+
   robots: {
     index: true,
     follow: true,
@@ -126,13 +132,34 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  // 👑 هيكلة البيانات البرمجية (JSON-LD) لتعريف اسم الموقع بالعربي والإنجليزي معاً لجوجل
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'name': 'الإمبراطور', // الاسم الأساسي بالعربي
+    'alternateName': [
+      'Al Embratour',
+      'وكالة الإمبراطور الرقمية',
+      'Al Embratour Digital Agency'
+    ], // الأسماء البديلة بالإنجليزية والعربية ليظهر بها في حال البحث بأي لغة
+    'url': 'https://alembratour.vercel.app',
+  };
+
   return (
-    <html 
-      lang="ar" 
-      dir="rtl" 
-      suppressHydrationWarning 
+    <html
+      lang="ar"
+      dir="rtl"
+      suppressHydrationWarning
       className={`${tajawal.variable} ${inter.variable} scroll-smooth`}
     >
+      <head>
+        {/* حقن السكريبت السحري لتعريف اسم الموقع واللوجو */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body className="bg-[#0B0C10] text-[#F5F5F7] antialiased min-h-screen flex flex-col font-sans">
         <LanguageProvider>
           <Navbar />
